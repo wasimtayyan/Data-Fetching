@@ -1,0 +1,145 @@
+/*
+ font-family: 'Playfair Display', serif;
+font-family: 'Roboto', sans-serif;
+ */
+ *{
+  margin: 0;
+  padding: 0;
+
+ }
+body{
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+font-size: 1rem;
+}
+h2{
+  align-self: center;
+  color: hsl(249.23,6.16%,41.37%);
+  line-height: 1;
+  margin-bottom: .50em;
+}
+label{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  display: block;
+  color: #2C2B59;
+  margin: .25em 0;
+  align-self: flex-start;
+}
+form{
+  padding: 0;
+  margin: 0;
+}
+main{
+  background-image: linear-gradient(rgb(77,82,182),rgb(147,125,234));
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 900;
+  min-height: 300px;
+  display: grid;
+  place-content: center;
+}
+.container{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+#users-list{
+  margin-top: -1em;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 5em;
+}
+.card{
+  background-color: #fff;
+  color: rgb(147,125,234);
+  padding: 1em;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  max-width: 18em;
+  min-height: 10em;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 10px 10px rgb(0 0 0 / 0.2);
+}
+.card p{
+  padding: .25em 0;
+}
+.card:hover{
+  transform: translateY(-15px);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.section{
+  background-color: rgb(147,125,234);
+  margin-top: 3em;
+  padding: 2em 0;
+}
+.center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#button{
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: #403E82;
+  display: block;
+  border: none;
+  border-radius: 100px;
+  padding: 1em 1em;
+  width: 100%;
+  max-width: 27em;
+  margin: 1em 0;
+  box-shadow: 0 10px 10px rgb(0 0 0 / 0.2);
+}
+.input{
+  border: none;
+  border-radius: 100px;
+  padding: 1em ;
+  margin: .50em 0;
+  width: 100%;
+  max-width: 25em;
+
+}
+.input:focus{
+  border-color: #403E82;
+  outline-color: #403E82;
+}
+#button:focus,
+#button:hover{
+   background-color: #202042;
+   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+
+
+
+
+@media ( min-width: 600px) {
+main{
+  font-size: 3rem;
+}
+#users-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+.card{
+gap: 1em;
+}
+.container{
+  width: 80%;
+}
+form{
+  width: 30%;
+}
+}
